@@ -17,11 +17,11 @@ const Hero = () => {
   // const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.5]);
 
   return (
-    <div className="relative" id="hero">
+    <div className="relative overflow-hidden" id="hero">
       <div
         // ref={targetRef}
         // style={{ opacity, scale }}
-        className="container top-0 sticky flex justify-center items-center h-screen"
+        className="container w-screen top-0 sticky flex justify-center items-center h-screen"
       >
         <div className="z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <h1 className="font-sans h1 font-bold mb-6 tracking-tight">
@@ -29,6 +29,7 @@ const Hero = () => {
           </h1>
         </div>
       </div>
+      <GradientLight />
       <div className="sticky top-0">
         <img
           src={mascot}
@@ -38,7 +39,7 @@ const Hero = () => {
           alt="hero"
         />
       </div>
-      <Gradient />
+      {/* <Gradient /> */}
     </div>
   );
 };

@@ -6,10 +6,10 @@ import Section from "../components/Section";
 const Advisor = () => {
   return (
     <Section className="">
-      <div className="relative">
+      <div className="relative ">
         <Heading className="md:max-w-md lg:max-w-2xl" title="Advisor" />
         <div className="sticky bg-n-8 top-0 mb-40 flex justify-center items-center">
-          <div className="container lg:flex">
+          <div className="container lg:flex overflow-hidden">
             <div className="max-w-[25rem] flex justify-center flex-col">
               <h2 className="h2 mb-4 md:mb-8">Roland ONG</h2>
               <p className="body">
@@ -39,7 +39,7 @@ const Advisor = () => {
           </div>
         </div>
         <div className="sticky bg-n-7 top-0 h-screen flex items-center justify-center">
-          <div className="container lg:flex">
+          <div className="container lg:flex overflow-hidden">
             <div className="xl:w-[38rem]">
               <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
                 <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
@@ -69,7 +69,7 @@ const Advisor = () => {
         </div>
 
         <div className="sticky bg-n-8 top-0 h-screen  flex justify-center items-center">
-          <div className="container lg:flex">
+          <div className="container lg:flex overflow-hidden">
             <div className="max-w-[25rem] flex justify-center flex-col">
               <h2 className="h2 mb-4 md:mb-8">Tess Hau</h2>
               <p className="body">
