@@ -15,6 +15,9 @@ import Roadmap from "./section/Roadmap";
 import Statistic from "./section/Statistic";
 import Footer from "./section/Footer";
 import Stats from "./section/Stats";
+import Image from "./section/Image";
+import Testing from "./section/Testing";
+import Advisor from "./section/Advisor";
 
 const App = () => {
   return (
@@ -22,9 +25,10 @@ const App = () => {
       <div className="pt-[4.75rem] lg:pt-[5.25rem]">
         {/* <Header /> */}
         <NewHeader />
-
         <div className="relative z-10">
-          <Hero className="sticky top-0 h-screen" />
+          <Hero />
+
+          {/* <Image /> */}
           <Stats />
           <div className="hidden lg:block">
             <Features />
@@ -32,7 +36,6 @@ const App = () => {
           <div className="block lg:hidden">
             <FeaturesMobile />
           </div>
-          {/* <Services /> */}
         </div>
         <Banner className="z-0" />
         <MovingLogo />
@@ -40,10 +43,11 @@ const App = () => {
         <Statistic />
         <Roadmap />
         <Member />
+        <Advisor />
         <Footer />
         {/* <Testing /> */}
       </div>
-      <ButtonGradient />
+      {/* <ButtonGradient /> */}
     </>
   );
 };

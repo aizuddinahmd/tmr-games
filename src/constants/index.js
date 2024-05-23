@@ -44,6 +44,7 @@ import {
   usp1,
   service2,
   usp3,
+  thecrocnation,
 } from "../assets";
 
 export const navigation = [
@@ -66,34 +67,46 @@ export const navigation = [
 
 export const logoIcons = [
   {
-    id: "1",
+    id: "0",
     src: viction,
     alt: "viction",
+    url: "https://viction.xyz/",
+  },
+  {
+    id: "1",
+    src: alchemy,
+    alt: "alchemy",
+    url: "https://alchemypay.org/",
   },
   {
     id: "2",
-    src: alchemy,
-    alt: "alchemy",
+    src: coin98,
+    alt: "coin98",
+    url: "https://coin98.com/",
   },
   {
     id: "3",
-    src: coin98,
-    alt: "coin98",
+    src: particle,
+    alt: "particle",
+    url: "https://particle.network/",
   },
   {
     id: "4",
-    src: particle,
-    alt: "particle",
+    src: kiyoots,
+    alt: "kiyoot",
+    url: "https://mthrlabs.xyz/",
   },
   {
     id: "5",
-    src: kiyoots,
-    alt: "kiyoot",
+    src: sekolahkripto,
+    alt: "sekolahkripto",
+    url: "https://linktr.ee/skolalabs",
   },
   {
     id: "6",
-    src: sekolahkripto,
-    alt: "sekolahkripto",
+    src: thecrocnation,
+    alt: "thecrocnation",
+    url: "https://opensea.io/TheCrocNation",
   },
 ];
 
@@ -385,6 +398,27 @@ export const teamMembers = [
     imgUrl: service3,
     title: "Chief Marketing Officer",
     name: "Aurora",
+  },
+];
+
+export const advisors = [
+  {
+    id: "0",
+    name: "Roland ONG",
+    description:
+      "Serial entrepreneur with 20+ years of experience in the game industry, Roland has reaped huge success from bring WoW to China and listing the 9 Ltd in Nasdaq",
+  },
+  {
+    id: "1",
+    name: "Martin Hoon",
+    description:
+      "Martin has 20+ years of immense experience in the field of ICT, Cloud, Mobile Gaming and Blockchain with a vision to contribute to the growth of Web3 world",
+  },
+  {
+    id: "2",
+    name: "Tess Hau",
+    description:
+      "Tess Hau is an investor & advisor to high performing startups globally. She had successful investment and exits in VR, biotech, construction, crypto companies",
   },
 ];
 

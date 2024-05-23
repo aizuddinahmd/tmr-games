@@ -81,6 +81,7 @@ import coin98 from "./logo/coin98.png";
 import kiyoots from "./logo/kiyoots.png";
 import sekolahkripto from "./logo/sekolahkripto.png";
 import particle from "./logo/particle.png";
+import thecrocnation from "./logo/thecrocnation.png";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -167,5 +168,6 @@ export {
   usp2,
   usp3,
   usp4,
+  thecrocnation,
   mascot,
 };

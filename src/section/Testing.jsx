@@ -3,7 +3,6 @@ import React from "react";
 const test = () => {
   return (
     <div>
-      {" "}
       <div className="relative">
         <div className="sticky top-0 h-screen bg-red-500 flex justify-center items-center">
           <div>
