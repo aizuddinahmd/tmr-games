@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="fixed top-5 z-50 backdrop-blur-sm border-b border-n-5 rounded-full flex">
+      <div className="fixed top-5 z-50 bg-n-7 backdrop-blur-sm border-b border-n-5 rounded-full flex">
         {/* Large Screen Navbar */}
         <div className="hidden lg:flex justify-between items-center px-5 xl:px-10 gap-4">
           {/* <a href="/" className="block m-2">
