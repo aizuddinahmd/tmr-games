@@ -2,13 +2,42 @@ import React from "react";
 import { service3 } from "../assets";
 import Heading from "../components/Heading";
 import Section from "../components/Section";
+import { advisors } from "../constants";
 
 const Advisor = () => {
   return (
     <Section className="">
-      <div className="relative ">
+      <div className="relative container">
         <Heading className="md:max-w-md lg:max-w-2xl" title="Advisor" />
-        <div className="sticky bg-n-8 top-0 mb-40 flex justify-center items-center">
+        {advisors.map((advisor) => (
+          <div className="sticky bg-n-8 top-0 h-screen flex justify-center items-center">
+            <div className="container lg:flex overflow-hidden">
+              <div className="max-w-[25rem] flex justify-center flex-col">
+                <h2 className="h2 mb-4 md:mb-8">{advisor.name}</h2>
+                <p className="body">{advisor.description}</p>
+              </div>
+
+              <div className="lg:ml-auto xl:w-[38rem]">
+                <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
+                  <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
+                    <div className="w-[60] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
+                      <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
+                        <img
+                          src={service3}
+                          className="w-full h-full object-cover rounded-full"
+                          width={520}
+                          height={400}
+                          alt={advisor.name}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+        {/* <div className="sticky bg-n-8 top-0 mb-40 flex justify-center items-center">
           <div className="container lg:flex overflow-hidden">
             <div className="max-w-[25rem] flex justify-center flex-col">
               <h2 className="h2 mb-4 md:mb-8">Roland ONG</h2>
@@ -97,7 +126,7 @@ const Advisor = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </Section>
   );

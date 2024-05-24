@@ -27,8 +27,6 @@ const App = () => {
         <NewHeader />
         <div className="relative z-10">
           <Hero />
-
-          {/* <Image /> */}
           <Stats />
           <div className="hidden lg:block">
             <Features />
