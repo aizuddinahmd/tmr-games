@@ -89,6 +89,11 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import bridgemaster from "./banner/bridgemaster.png";
+import dangerousroad from "./banner/dangerousroad.png";
+import oceanx from "./banner/oceanx.png";
+import parkourswing from "./banner/parkourswing.png";
+
 export {
   brainwave,
   check,
@@ -170,4 +175,8 @@ export {
   usp4,
   thecrocnation,
   mascot,
+  bridgemaster,
+  dangerousroad,
+  oceanx,
+  parkourswing,
 };

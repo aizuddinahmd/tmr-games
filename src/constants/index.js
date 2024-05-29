@@ -45,6 +45,10 @@ import {
   service2,
   usp3,
   thecrocnation,
+  bridgemaster,
+  dangerousroad,
+  oceanx,
+  parkourswing,
 } from "../assets";
 
 export const navigation = [
@@ -459,4 +463,11 @@ export const features = [
     showViction: false, // Decide whether to show "Powered by Viction" section for this item
     victionLogo: null, // Path to the Viction logo image if applicable
   },
+];
+
+export const banners = [
+  { imageUrl: bridgemaster, name: "bridgemaster" },
+  { imageUrl: parkourswing, name: "parkourswing" },
+  { imageUrl: oceanx, name: "oceanx" },
+  { imageUrl: dangerousroad, name: "dangerousroad" },
 ];

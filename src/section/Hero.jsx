@@ -5,7 +5,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import { Gradient } from "../components/design/Roadmap";
 
 import { GradientLight } from "../components/design/Benefits";
-import { heroBackground, mascot } from "../assets";
+import { mascot } from "../assets";
 
 const Hero = () => {
   // const targetRef = useRef();
@@ -17,7 +17,7 @@ const Hero = () => {
   // const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.5]);
 
   return (
-    <div className="relative" id="hero">
+    <div className="relative overflow-hidden" id="hero">
       <div
         // ref={targetRef}
         // style={{ opacity, scale }}

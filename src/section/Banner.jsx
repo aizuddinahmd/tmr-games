@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { banners } from "../constants";
 import bridgemaster from "../assets/banner/bridgemaster.png";
 import dangerousroad from "../assets/banner/dangerousroad.png";
 import parkourswing from "../assets/banner/parkourswing.png";
@@ -36,6 +37,7 @@ const Banner = () => {
   );
 
   const postersOpacity = useTransform(scrollYProgress, [0.64, 0.66], [0, 1]);
+
   const posterTranslateXLeft = useTransform(
     scrollYProgress,
     [0.64, 0.66],
@@ -64,6 +66,18 @@ const Banner = () => {
       >
         <div className="sticky top-0 flex h-screen items-center">
           <div className="relative left-1/4 mb-5 flex -translate-x-1/2 gap-5">
+            {/* {banners.map((banner) => {
+              <motion.div
+                style={{ opacity: postersOpacity, x: posterTranslateXLeft }}
+                className="aspect-[9/16] w-[300px] shrink-0 overflow-clip rounded-2xl md:aspect-video md:w-[60vw]"
+              >
+                <img
+                  className="h-full w-full object-cover"
+                  src={banner.imageUrl}
+                  alt={banner.name}
+                />
+              </motion.div>;
+            })} */}
             <motion.div
               style={{ opacity: postersOpacity, x: posterTranslateXLeft }}
               className="aspect-[9/16] w-[300px] shrink-0 overflow-clip rounded-2xl md:aspect-video md:w-[60vw]"
@@ -74,6 +88,7 @@ const Banner = () => {
                 alt="bridgemaster"
               />
             </motion.div>
+            ;
             <motion.div
               style={{ scale }}
               className="relative aspect-[9/16] w-[300px] shrink-0 overflow-clip rounded-2xl md:aspect-video md:w-[60vw]"

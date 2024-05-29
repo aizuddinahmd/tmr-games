@@ -47,7 +47,7 @@ const Header = () => {
         </div>
 
         {/* Small Screen Navbar */}
-        <div className="flex lg:hidden justify-between items-center px-5 py-4">
+        <div className="flex lg:hidden justify-between items-center px-5 py-1">
           <a href="/" className="block">
             <img src={tmrlogo2} width={90} height={20} alt="logo" />
           </a>
@@ -57,13 +57,13 @@ const Header = () => {
         </div>
 
         {openNavigation && (
-          <div className="lg:hidden rounded-full fixed inset-0 bg-n-7 backdrop-blur-sm z-40 flex flex-col items-center space-y-4 py-4 justify-between">
+          <div className="lg:hidden rounded-full fixed inset-0 bg-n-7 backdrop-blur-sm z-40 flex flex-col items-center space-y-4 py-1 justify-between">
             <div className="flex flex-row justify-between items-center">
               <a href="/" className="block">
                 <img src={tmrlogo2} width={90} height={20} alt="logo" />
               </a>
               <Button
-                className="self-end mr-5 flex items-center justify-center"
+                className="flex items-center justify-center"
                 px="px-3"
                 onClick={toggleNavigation}
               >
